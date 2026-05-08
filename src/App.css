@@ -1,13 +1,21 @@
 .div1 {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--shadow);
   /* padding: 20px; */
   display: flex;           /* 1. Establish a flex container */
+  flex-direction: column;  
   justify-content: center; /* 2. Center horizontally (main axis) */
   align-items: center;     /* 3. Center vertically (cross axis) */
   height: 100vh;           /* 4. Optional: Give the parent height to see vertical centering */
+  gap: 20px;              /* 5. Optional: Add space between the image and text */
 }
+.div1 img {
+  max-width: 250px; /* Adjust as needed */
+  margin-right: 20px; /* Space between image and text */
+}
+/* .div1 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--shadow);
+} */
 
 
 .counter {
@@ -194,6 +202,190 @@
     border-right-color: var(--border);
   }
 }
+
+
+
+
+
+
+
+/* 
+
+
+
+.loading-text {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ddd; 
+  position: relative;
+  display: inline-block;
+}
+
+.loading-text::after {
+  content: "Coming Soon...";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #3498db; 
+  width: 0;
+  overflow: hidden;
+  animation: fillText 3s linear infinite;
+}
+
+@keyframes fillText {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pulse-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+    color: rgb(133, 133, 133);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+
+
+
+
+
+
+
+
+.container {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.text {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 150px;
+  height: 2px;
+  background: #eee;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar::after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background: #3498db; 
+  position: absolute;
+  left: -100%;
+  animation: loading-line 1.5s infinite ease-in-out;
+}
+
+@keyframes loading-line {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+ */
+
+
+
+
+
+
+
+/* 
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-top-color: #007bff;
+  border-radius: 50%;
+  margin: 20px auto;
+  animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+*/
+
+
+
+
+
+
+
+
+.gentle-text {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+
+    /* حل مشکل خورده شدن لبه‌ها */
+  line-height: 1.6; /* افزایش فاصله عمودی */
+  padding: 10px 0;   /* ایجاد فضای امن در بالا و پایین */
+  display: block;    /* اطمینان از فضای کافی */
+  
+  /* گرادینت ثابت با یک نقطه روشن در وسط */
+  background: linear-gradient(
+    to right, 
+    #444 20%, 
+    #fff 50%, 
+    #444 80%
+  );
+  
+  /* بزرگ کردن پس‌زمینه برای ایجاد فضای حرکت */
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* تغییر جهت حرکت: از ۲۰۰٪ به ۰٪ باعث حرکت بصری از چپ به راست می‌شود */
+  animation: shine-left-to-right 4s ease-in-out infinite;
+}
+
+@keyframes shine-left-to-right {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+
+
+
+
 
 
 
