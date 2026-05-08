@@ -1,3 +1,15 @@
+.div1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--shadow);
+  /* padding: 20px; */
+  display: flex;           /* 1. Establish a flex container */
+  justify-content: center; /* 2. Center horizontally (main axis) */
+  align-items: center;     /* 3. Center vertically (cross axis) */
+  height: 100vh;           /* 4. Optional: Give the parent height to see vertical centering */
+}
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
